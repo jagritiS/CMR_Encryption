@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>CMR Encryption</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            /* background: gray; */
+            color: gray;
+            background: linear-gradient(#141e30, #243b55);
+        }
+     #cs{
+        height: 300px;
+        width:300px;
+        background: rgba(0, 0, 0, .5);
+        float: left;
+        padding: 30px;
+        margin-right: 50px;
+        margin-left: 30px;
+        margin-top:50px;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+
+
+    }
+
+    #rs{
+        height: 300px;
+        width:300px;
+        background: rgba(0, 0, 0, .5);
+        float: left;
+        padding: 30px;
+        margin-right: 50px;
+        margin-left: 30px;
+        margin-top:50px;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+
+    }
+    #ds{
+        height: 300px;
+        width:300px;
+        background-color:rgba(0, 0, 0, .5);
+        float: left;
+        padding: 30px;
+        margin-right: 50px;
+        margin-left: 30px;
+        margin-top:50px;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+    }
+    input{
+        color: black;
+    }
+</style>
+</head>
+   <body>
+{#ceaser cypher table#}
+   <div id="cs">
+   <h2>Ceasar Cypher </h2>
+    <table>
+        <tr>
+            <th>Plain Text</th>
+            <td><input type="text" value="{{data[0]}}"></td>
+        </tr>
+        <tr>
+            <th>Encrypted Text</th>
+            <td><input type="text" value="{{data[1]}}"></td>
+        </tr>
+        <tr>
+            <th>Decrypted Text</th>
+            <td><input type="text" value="{{data[2]}}"></td>
+        </tr>
+    </table>
+   </div>
+   {#end of ceasar cypher#}
+
+   {#railfence cypher table#}
+   <div id="rs">
+   <h2>Railfence Cypher </h2>
+    <table>
+        <tr>
+            <th>Plain Text</th>
+            <td><input type="text" value="{{data[0]}}"></td>
+        </tr>
+        <tr>
+            <th>Encrypted Text</th>
+            <td><input type="text" value="{{data[3]}}"></td>
+        </tr>
+        <tr>
+            <th>Decrypted Text</th>
+            <td><input type="text" value="{{data[4]}}"></td>
+        </tr>
+    </table>
+   </div>
+   {#end of railfence#}
+   {#devnagiri  cypher table#}
+   <div id="ds">
+   <h2>Monoalphabetic Cypher </h2>
+    <table>
+        <tr>
+            <th>Plain Text</th>
+            <td><input type="text" value="{{data[0]}}"></td>
+        </tr>
+        <tr>
+            <th>Encrypted Text</th>
+            <td><input type="text" value="{{data[5]}}"></td>
+        </tr>
+        <tr>
+            <th>Decrypted Text</th>
+            <td><input type="text" value="{{data[6]}}"></td>
+        </tr>
+    </table>
+   </div>
+   {#end of devnagiri#}
+   </body>
+</html>
